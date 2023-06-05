@@ -1,0 +1,25 @@
+//  *{outline:1px solid orange;}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.container{
+    background: #000; 
+}
+.wrap{
+    max-width: 1296px;
+    margin: 0 auto;
+    @include mobile{
+        max-width: 351px;
+    }
+}
+body{
+    font-family:'noto sans tc', sans-serif;
+    font-size:$Body;
+    line-height: 1.2;
+    color:#fff
+}
+img{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,141 @@
+.header-title{
+    display: flex;
+    justify-content: space-between;
+    padding:16px 0;
+    border-bottom: 1px solid #fff;
+    @include mobile{
+        padding:28px 0;
+    }
+    h1{
+        img{
+            width: 250px;
+            @include mobile{
+                width: 147px;
+            }
+        }
+    }
+    span{
+        display: none;
+        @include mobile{
+            display: block;
+            margin-left: 175px;
+            
+
+        }
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        a{
+            font-weight: 700;
+            line-height: 1.5;
+            display: block;
+            color:#fff;
+            text-decoration: none;
+            padding:12px 0 ;
+            margin-left:20px;
+            &:hover{
+                text-shadow:0 0 2px #fff;
+            } 
+            @include mobile{
+                display: none;
+        }       
+            }       
+        }
+        
+    
+
+    }
+
+.header-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 160px;
+    h2{
+        font-size: $D02;
+        font-weight: 900;
+        padding: 40px 0;
+        @include mobile{
+            font-size: $H01;
+            width: 252px;            
+        }
+    }
+    p{
+        font-size: $H01;
+        font-weight: 900;
+        width: 600px;
+        @include mobile{
+            font-size: $H04;
+            width: 257px;
+        }
+    }
+    .start-btn{
+        a{
+            color: #fff;
+            font-size: $H06;
+            font-weight: 900;
+            display: block;        
+            padding: 20px 40px;
+            border-radius:16px; 
+            text-decoration: none;
+            border: 1px solid #fff;
+            &:hover{
+                background:#fff;
+                color: #000;
+                transition: .3s;
+            }
+        }
+    }
+    .motion{       
+        display: flex;
+        overflow: hidden;
+        img {
+            width: 180px;
+            height: 180px; 
+            @include mobile{   
+                width: 117px;
+                height: 117px;
+            }           
+        }
+        .img3{    
+            position:relative;
+            animation:grass 7s ease 1.5s infinite;    
+        }
+        .img2{
+            position:relative;
+            animation:grass 7s ease 1.25s infinite;   
+        }
+        .img1{
+            position:relative;
+            animation:grass 7s ease 1s infinite;        
+        }
+        @keyframes grass {
+             0%  { top: 0px; }
+             30% {top:-200px;}
+             50% {top:200px; left:-700px;}
+             60% {top:200px; }
+             90% { top: 0px; }
+             100% { top: 0px; }
+             
+            }          
+                  
+        }
+    
+}
+.mt-180{
+    margin-top:100px;
+    @include mobile{
+        margin-top: 180px;
+    }
+}
+.mt-258{
+    margin-top:238px;
+    @include mobile{
+        margin-top: 258px;
+    }
+}
+.flex-end{
+    align-self: flex-end;
+}
+

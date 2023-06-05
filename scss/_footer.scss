@@ -1,0 +1,159 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 80px;
+    @include mobile{        
+        gap: 32px;      
+    }
+}   
+.footer-cta{  
+    h4{
+      font-size: $H01;
+      font-weight:900;
+      text-align: center;
+      padding:80px 0 40px 0 ;
+      @include mobile{
+      text-align: center;
+      font-size: $H03;
+      padding:120px 0 32px 0;
+      }
+    } 
+    br{
+      display: none;
+      @include mobile{
+        display: block;
+        }
+    
+    }
+}
+
+    
+.footer-start-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    @include mobile{
+        padding-bottom: 120px;
+    }
+    a{
+        display: block;
+        border: 1px solid white;
+        border-radius: 16px;
+        font-weight:700;
+        font-size: $H06;
+        text-decoration: none;
+        color:#fff;
+        padding:20px 32px 20px 40px;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            transition: .3s;
+        }
+        span{
+            font-size: 20px;
+            padding-left: 14px;
+            line-height: 0;
+        }  
+    }
+   
+}
+.footer-menu{
+@include mobile{
+    margin:0 12px;
+}    
+}
+.footer-menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding:80px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    li{
+        a{
+            font-size: $D03;
+            font-weight: 900;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    li+li{
+        padding-top: 8px;
+    }
+    .footer-logo{
+        img{
+            width: 245px;
+            margin-bottom: 40px;
+        }
+    }
+    @include mobile{
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        padding:80px 0;
+        li{
+            a{
+            font-size: $H01;
+            }
+        }   
+    } 
+}
+
+.footer-bottom{
+    font-weight: 700;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0 ;
+    @include mobile{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        gap:20px;    
+    }
+    .copyright{
+        padding:12px 80px 12px 0;
+        margin-right:10px;
+       @include mobile{
+            padding:12px 0 12px 0;
+            align-items: center;
+        }
+    }
+    .social{       
+        display: flex;
+        flex-grow: 1;
+        @include mobile{
+            order:3;
+        }
+        li{
+            a{
+            color: #fff;
+            text-decoration: none;
+            padding:12px 0;
+            margin:0 10px;
+            @include mobile{
+            margin:0 20px 0 0;
+            }
+            
+            }
+        }
+    }
+    .backtotop{
+        display:flex;
+        align-items:center;
+        cursor: n-resize;
+        @include mobile{
+            margin-right: 12px;
+        }
+        p{
+          padding-right:12px;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+

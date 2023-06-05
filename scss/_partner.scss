@@ -1,0 +1,127 @@
+.partner{
+    h3{
+        font-size: $H03;
+        font-weight: 900;
+        padding-bottom: 80px;   
+        @include mobile{
+            font-size:$H06;
+            padding-bottom: 24px;
+
+        }
+    }
+    .enterprise{
+        overflow-x: scroll;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+        
+        .logo{
+            display: flex;
+            justify-content: center;
+            position:relative;
+            height: 40px;
+            &::before,&::after{
+                content:"";
+                position:sticky;
+                top: 0;
+            }
+            &::before{              
+                z-index: 1; //為什麼不用設定也會在前面
+                left:-1px;  
+                padding-left:196px; 
+                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.991615) 11.79%, rgba(0, 0, 0, 0.967585) 21.38%, rgba(0, 0, 0, 0.9296) 29.12%, rgba(0, 0, 0, 0.879348) 35.34%, rgba(0, 0, 0, 0.818519) 40.37%, rgba(0, 0, 0, 0.7488) 44.56%, rgba(0, 0, 0, 0.671881) 48.24%, rgba(0, 0, 0, 0.589452) 51.76%, rgba(0, 0, 0, 0.5032) 55.44%, rgba(0, 0, 0, 0.414815) 59.63%, rgba(0, 0, 0, 0.325985) 64.66%, rgba(0, 0, 0, 0.2384) 70.88%, rgba(0, 0, 0, 0.153748) 78.62%, rgba(0, 0, 0, 0.0737185) 88.21%, rgba(0, 0, 0, 0) 100%);
+                @include mobile{
+                    padding-left: 80px
+                }
+            }
+            &::after{
+                // z-index: 1;   
+                right:0; 
+                padding-right: 196px;
+                background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.991615) 11.79%, rgba(0, 0, 0, 0.967585) 21.38%, rgba(0, 0, 0, 0.9296) 29.12%, rgba(0, 0, 0, 0.879348) 35.34%, rgba(0, 0, 0, 0.818519) 40.37%, rgba(0, 0, 0, 0.7488) 44.56%, rgba(0, 0, 0, 0.671881) 48.24%, rgba(0, 0, 0, 0.589452) 51.76%, rgba(0, 0, 0, 0.5032) 55.44%, rgba(0, 0, 0, 0.414815) 59.63%, rgba(0, 0, 0, 0.325985) 64.66%, rgba(0, 0, 0, 0.2384) 70.88%, rgba(0, 0, 0, 0.153748) 78.62%, rgba(0, 0, 0, 0.0737185) 88.21%, rgba(0, 0, 0, 0) 100%);
+                @include mobile{
+                    padding-right: 80px;
+                }
+            }
+        }
+        .mb-20{
+            margin-bottom: 20px;
+            @include mobile{
+                margin-bottom: 12px;
+            }
+        }
+        .mb-160{
+            margin-bottom: 160px;
+            @include mobile{
+                margin-bottom: 48px;
+            }
+        }
+        li{
+            &:not(:last-child){
+                padding-right: 20px;
+        }           
+        }
+        img{
+            width: 160px;
+            height: 40px;
+            }
+        }
+    
+ 
+.swiper-wrapper{
+    display: flex;
+    // gap:20px;
+    @include mobile{
+    } 
+    .swiper-slide{
+        height:400px;
+        width: 30%;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        // gap: 12px;
+        @include mobile{
+            width:100%;
+            height:auto;
+            padding:20px;
+            // gap:12px;
+        }
+        span{
+            font-size: 16px;
+        }
+        .txt{
+            flex-grow: 1;
+        }
+        p{
+            line-height: 1.5;
+            font-weight: 400;
+        }
+      
+        .client{
+            display: flex;
+            img{
+                width:48px;
+            }
+            .client-info{
+                padding-left: 16px;
+                .mb-4{
+                    margin-bottom: 4px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+   
+    }
+    margin-bottom: 160px;
+    @include mobile{
+        margin-bottom: 156px;
+        
+
+    }
+}
+

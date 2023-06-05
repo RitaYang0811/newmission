@@ -1,0 +1,47 @@
+.rule{
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+        margin-bottom: 120px;
+        flex-direction: column;
+    }
+    
+
+    h3{
+        font-size: $H03;
+        font-weight: 900;
+        @include mobile{
+            font-size: $H06;
+            margin-bottom: 48px;
+        }
+    }
+    .rule-list{
+        .rule-card{
+            padding-bottom: 40px;
+            border-bottom: 1px solid #525252;
+            h4{
+                font-size: $H01;
+                font-weight: 900;
+                padding-bottom: 24px;
+                @include mobile{
+                    font-size: $H03;
+                }
+                }
+            }
+            p{
+                font-size: $H03;
+                font-weight: 400;
+                @include mobile{
+                    font-size: $Body;
+                    line-height: 1.5;
+                }
+            }
+        }
+        li+li{
+            margin-top: 40px;
+            @include mobile{
+                margin-top: 24px;
+            }
+        }
+    }

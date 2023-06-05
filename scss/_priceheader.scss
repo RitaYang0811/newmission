@@ -1,0 +1,72 @@
+.header-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+        font-size: $D02;
+        font-weight: 900;
+        padding: 40px 0;
+        @include mobile{
+            font-size: $H01;
+            width: 252px;            
+        }
+    }
+    .start-btn{
+        a{
+            color: #fff;
+            font-size: $H06;
+            font-weight: 900;
+            display: block;        
+            padding: 20px 40px;
+            border-radius:16px; 
+            text-decoration: none;
+            border: 1px solid #fff;
+            &:hover{
+                background:#fff;
+                color: #000;
+                transition: .3s;
+            }
+        }
+    }
+    .motion{
+        align-self: flex-end;
+        display: flex;
+        margin:100px 0; 
+        overflow: hidden;
+        img {
+            width: 180px;
+            height: 180px;    
+        }
+        .img3{    
+            position:relative;
+            animation:grass 7s ease 1.5s infinite;    
+        }
+        .img2{
+            position:relative;
+            animation:grass 7s ease 1.25s infinite;   
+        }
+        .img1{
+            position:relative;
+            animation:grass 7s ease 1s infinite;        
+        }
+
+         @keyframes grass {
+             0%  { top: 0px; }
+             30% {top:-200px;}
+             50% {top:200px; left:-700px;}
+             60% {top:200px; }
+             90% { top: 0px; }
+             100% { top: 0px; }
+             
+            }  
+        
+        
+        @include mobile{
+            margin:180px 0;
+            img{
+                width: 117px;
+                height: 117px;
+            }
+        }
+    }
+}

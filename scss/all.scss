@@ -1,0 +1,23 @@
+@import"variable";
+@import"reset";
+@mixin mobile{
+  @media(max-width:375px){
+    @content;}
+  }
+@import"basic";
+@import"header";
+@import"service";
+@import"partner";
+@import"tool";
+@import"price";
+@import"rule";
+@import"qa";
+@import"footer";
+
+
+
+
+
+
+
+

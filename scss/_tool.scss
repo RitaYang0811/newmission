@@ -1,0 +1,304 @@
+.tool{
+    background: #fff;
+    border-radius: 160px;
+    color:#000;
+    padding: 160px 0 162px 0 ;
+    @include mobile{
+        border-radius: 20px;
+        padding: 80px 0;
+    }
+    h5{
+        font-size: $D03;
+        font-weight: 900;
+        text-align: center;
+        color: #000;
+        margin-bottom: 80px;
+        br{
+            display: none;
+        }
+        @include mobile{
+            font-size: $H03;
+            margin-bottom:32px; 
+            br{
+                display: block;
+            }
+        }
+    }
+.search{
+    position: relative;
+    font-size: $Body;
+    line-height: 1.5;
+    font-weight: 400;
+    .s-icon{
+        font-size: 24px;
+        position:absolute;
+        color:rgba(0,0,0,0.2);
+        left:40px;
+        top:20px;
+
+}
+}
+input{
+    color: #000;
+    width:100%;
+    padding:20px 40px 20px 76px;
+    border-radius: 16px;
+    background: #F2F2F2;
+    border: none;
+    position:relative;
+    ::placeholder{   
+        color:rgba(0,0,0,0.2);
+    }
+    }
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#000;
+    padding:24px 0 40px 0;
+    @include mobile{
+        flex-wrap: wrap;
+    }
+
+    .list-l{
+        display: flex;
+        align-items: center;
+        padding: 20px 32px 20px 40px;
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        p{
+            padding-right: 12px;
+        }
+        span{
+            font-size: 16px;
+        }
+        @include mobile{
+
+        }
+    }
+    .list-m{
+        display: flex;
+        gap:8px;
+        @include mobile{
+            // min-width: 544px;
+            order: 3;
+            overflow-x: scroll;
+            -ms-overflow-style: none; 
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+            display: none;
+            }
+        }
+        
+        a{
+            display:block;
+            text-decoration: none;
+            color: #919191; 
+            padding:8px 16px;
+            gap:10px;
+            &:hover{
+                
+                background: #F2F2F2;
+                border-radius: 16px;
+                color: #000;
+                font-weight: 700;
+                transition: .3s;
+            }
+             @include mobile{
+            width: 96px;
+            text-align: center;}
+
+        }
+        
+    }
+
+    .dropdown{
+        a {
+            text-decoration: none;
+            display: block;
+            color: inherit;
+          }
+          .fs-normal {
+            font-size: 16px;
+          }
+          
+          .mb-8 {
+            margin-bottom: 8px;
+          }
+
+          .ml-12 {
+            margin-left: 12px;
+          }
+         
+          
+          .filter {
+            display: flex;
+            justify-content: flex-end;
+          }
+          
+          .dropdown {
+            position: relative;
+          }
+          
+          .dropdown-btn {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #F2F2F2;
+            padding: 20px 32px 20px 40px;
+            border-radius: 16px;
+          }
+          
+          .dropdown-btn:hover {
+            border-color: #000000;
+          }
+          
+          .dropdown-menu {
+            position: absolute;
+            right:0;
+            display: none;
+            margin-top: 4px;
+            box-shadow: 0 0 15px lightgray ;
+            padding: 20px 0;
+            border-radius: 16px;
+            background: #fff;
+          }
+          
+          .dropdown-menu a {
+            padding: 4px 40px;
+          }
+          
+          .dropdown-menu a:hover {
+            background-color:#F2F2F2;;
+          }
+          
+          .dropdown-menu.show {
+            display: block;
+          }
+
+    }
+
+    
+    
+}  
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    .items{
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        @include mobile{
+            width: 100%;
+            margin-bottom: 12px;
+        }
+        .items-pic{
+            
+            overflow: hidden;
+            
+            img{
+                display: block;
+                transition: all .5s ease-out;
+                &:hover{
+                    transform:scale(1.2);
+                    transition: all 0.5s ease ;
+                }
+            }
+        }
+        .items-title{
+            padding: 20px 32px;
+            flex-grow: 1;
+            
+            h6{
+                font-size: $H06;
+                font-weight: 900;
+                margin-bottom: 12px;
+            }
+            p{
+                font-size: $Small;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #525252;
+                
+            }
+        }
+        .items-ai, .items-tag{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $Body;
+            line-height: 1.5;
+            padding: 20px 32px;
+            p{
+                font-weight: 700;
+                
+            }
+            span{
+                font-weight: 400;
+
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+            }            
+        }
+        .border-tb{
+            border-top: 1px solid #F2F2F2;
+            border-bottom:1px solid #F2F2F2;
+        }
+        
+
+    }
+    
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    padding-top: 16px;
+    @include mobile{
+        padding-top: 20px;
+    }
+    a{
+        font-size: $Small;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        display: block;
+        width: 48px;
+        height: 48px;
+        color: #000;
+        text-decoration: none;
+        padding: 13.5px;
+        &:active{
+        background-color: #000;
+        color: #fff;
+        border-radius: 16px;
+        }
+
+    }
+    .black-btn{
+        background-color: #000;
+        color: #fff;
+        top:50%;
+        left:50;
+        border-radius: 16px;
+        
+        
+    }
+}
+
+
+
+
+
+
+}
