@@ -7,23 +7,40 @@
         padding:28px 0;
     }
     h1{
-        img{
-            width: 250px;
-            @include mobile{
-                width: 147px;
-            }
+        
+        a{
+        width: 250px;
+        height: 40px;
+        background-image:url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png);
+        background-size:250px 40px;
+        text-indent: 101%;
+        overflow:hidden;
+        white-space: nowrap;
+        float: left; 
+        @include mobile{
+            width: 147px;
+            height: 24px;
+            background-size:147px 24px;
+        }
         }
     }
-    span{
+}
+    .header-icon{
         display: none;
         @include mobile{
             display: block;
-            margin-left: 175px;
-            
-
+            order: 3;
         }
     }
-    .menu{
+    .d-none{
+        display: none;
+    }
+    .d-block{
+        display: block;
+    }
+    
+
+    .menu-sm{
         display: flex;
         align-items: center;
         a{
@@ -42,11 +59,33 @@
         }       
             }       
         }
-        
     
-
+    .menu-xl.show{
+        
+        position: absolute;
+        top: 81px;
+        left: 0px;
+        width: 100%;
+        min-height: calc(100vh - 81px);
+        padding-top:150px;
+        // padding-bottom: 500px;
+        display: flex;
+        flex-direction: column; 
+        gap: 8px; 
+        align-items: center; 
+        a{
+        font-size: $D03;
+        font-weight: 900;
+        line-height: 1.5;
+        display: block;
+        color:#fff;
+        text-decoration: none;
+        &:hover{
+            text-shadow:0 0 2px #fff;
+        } 
+        }
     }
-
+ 
 .header-banner{
     display: flex;
     flex-direction: column;
@@ -71,7 +110,7 @@
         }
     }
     .start-btn{
-        a{
+        
             color: #fff;
             font-size: $H06;
             font-weight: 900;
@@ -80,13 +119,19 @@
             border-radius:16px; 
             text-decoration: none;
             border: 1px solid #fff;
+            background: #000;
             &:hover{
                 background:#fff;
                 color: #000;
                 transition: .3s;
             }
-        }
+        
     }
+    .start-btn.none{
+        display: none;
+        border: 0px;
+    }
+
     .motion{       
         display: flex;
         overflow: hidden;
@@ -139,3 +184,8 @@
     align-self: flex-end;
 }
 
+.header-banner.none{
+    h2{display: none;}
+    p{display: none;}
+    .motion{display: none;}
+}

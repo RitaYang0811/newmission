@@ -8,7 +8,7 @@
     }
     
 
-    h3{
+    .h3{
         font-size: $H03;
         font-weight: 900;
         @include mobile{
@@ -20,7 +20,7 @@
         .rule-card{
             padding-bottom: 40px;
             border-bottom: 1px solid #525252;
-            h4{
+            .rule-title{
                 font-size: $H01;
                 font-weight: 900;
                 padding-bottom: 24px;

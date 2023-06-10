@@ -5,30 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
-    <title>Document</title>
+  <link rel="stylesheet" href="css/all.css">
+    <title>AI工具王</title>
 </head>
 
 <body>
     <div class="container ">
         <div class="wrap">
         <!-- 首頁 header -->
-        <div class="header">
-            <div class="header-title">
-                <h1><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
-                        alt="logo"></h1>
-                <span class="material-icons">menu</span>
-                <ul class="menu">
+            <header>              
+                <div class="header-title">
+                    <h1><a href="https://ritayang0811.github.io/newmission/index.html">AI工具王</a></h1>
+                    <div class="header-icon">
+                        <span class="material-icons icn-menu">menu</span>
+                        <span class="material-icons icn-close d-none">close</span>
+                    </div>
+                <div class="menu">
+                <ul class="menu-sm">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="price.html">定價</a></li>
+                </ul>              
+                <ul class="menu-xl d-none" >
                     <li><a href="#">首頁</a></li>
                     <li><a href="https://ritayang0811.github.io/newmission/price.html">定價</a></li>
+                    
                 </ul>
-            </div>
-            <div class="header-banner">
+                </div>
+                </div>
+                <div class="header-banner">
                     <h2>透過
                         <br>
                         AI工具王的
@@ -37,21 +46,26 @@
                         <br>
                         讓您的業務更聰明
                     </h2>
-                    <div class="start-btn">
-                        <a href="＃">開始使用</a>
-                    </div>
+                    <button type="button" class="start-btn">
+                        開始使用 
+                    </button>
+                    
                     <div class="motion flex-end mt-180">
                         <span><img class="img3" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png" alt="motion" >
                         </span>
                         <span><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png" alt="motion" class="img2"></span>
                         <span><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png" alt="motion" class="img1"></span>
                     </div>
-            </div>
-        </div>
+                </div>
+                
+            </header>
+        <!-- </div> -->
         <!-- 我們的服務 service -->
-        <div class="service">
+        <main>
+            <div class="wrap">
+                <div class="service">
             <div class="service-txt">
-                <h3>我們的服務</h3>
+                <h2 class="h3">我們的服務</h2>
                 <h4>我們相信透過 AI 技術，<br>
                     包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</h4>
             </div>
@@ -60,27 +74,29 @@
                     <span class="material-icons">
                         flash_on
                     </span>
-                    <h3>快速</h3>
+                    <h3 class="service-title">快速</h3>
                     <p>我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
                 </li>
                 <li>
                     <span class="material-icons">
                         auto_awesome
                     </span>
-                    <h3>靈活</h3>
+                    <h3 class="service-title">靈活</h3>
                     <p>我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
                 </li>
                 <li>
                     <span class="material-icons">
                         library_add
                     </span>
-                    <h3>擴充</h3>
+                    <h3 class="service-title">擴充</h3>
                     <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
                 </li>
             </ul>
-        </div>
-        <!-- 合作夥伴＆評論 partner -->
-        <div class="partner">
+                </div>
+            </div>
+            <!-- 合作夥伴＆評論 partner -->
+            <div class="wrap">
+                <div class="partner">
             <h3>來自合作夥伴</h3>
             <div class="enterprise">
                 <ul class="logo mb-20">
@@ -180,22 +196,48 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        </div>
-        <!-- 第一部分wrap end -->
-        </div>
-        <!-- AI工具王 tool -->
-        <div class="tool">
-            <div class="wrap">
-            <h5>這些超酷的應用，<br>都來自 AI工具王</h5>
+                </div>
+            </div>
+            <!-- AI工具王 tool -->
+            <div class="tool">
+                <div class="wrap">
+            <h2 class="h5">這些超酷的應用，<br>都來自 AI工具王</h2>
             <div class="search">
-                <input type="search" name="search" id="search" placeholder="輸入關鍵字搜尋">
-                <span class="material-icons s-icon">
+                <div class="search-bar">
+                    <span class="material-icons s-icon">
                     search
-                    </span>
+                </span>
+                <input type="search" name="search" id="search" placeholder="輸入關鍵字搜尋">
+                
+                </div>
                 <div class="list">
-                    <div class="list-l">
-                        <p>篩選</p>
-                        <span class="material-icons">filter_alt</span>
+                    <div class="select">
+                        <button type="button" class="select-btn ">
+                            <span class="select-title">篩選</span>
+                            <span class="material-icons">
+                                filter_alt
+                            </span>
+                        </button>
+                        <div class="select-menu">
+                        <ul class="select-model">
+                            <h5>AI模型</h5>
+                            <li ><a href="#">所有模型</a></li>
+                            <li><a href="#">卡卡</a></li>
+                            <li><a href="#">杰杰</a></li>
+                            <li><a href="#">琪琪</a></li>
+                            <li><a href="#">昊昊</a></li>
+                        </ul>
+                        <ul class="select-type mt-14">
+                            <h5 >類型</h5>
+                            <li><a href="#">所有類型</a></li>
+                            <li><a href="#">篩選項目1</a></li>
+                            <li><a href="#">篩選項目2</a></li>
+                            <li><a href="#">篩選項目3</a></li>
+                            <li><a href="#">篩選項目4</a></li>
+                            <li><a href="#">篩選項目5</a></li>
+                            <li><a href="#">篩選項目6</a></li>
+                        </ul>
+                        </div>
                     </div>
                     <ul class="list-m">
                         <li><a href="#">全部</a></li>
@@ -221,7 +263,7 @@
                             <a href="#" class="old-to-new">由舊到新</a>
                           </li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
             <ul class="card">
@@ -338,29 +380,31 @@
                 <li><a href="#">4</a></li>
                 <li><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></li>
             </ul>
-            </div>
-        </div>       
+                </div>
+            </div> 
+        </main>      
         <!-- 表尾 footer-->
         <div class="wrap">
+            <footer>
             <div class="footer">            
-            <div class="footer-cta">
+            <div class="footer-cta close">
                 <h4>現在就來建立<br/>屬於你的服務吧
                 </h4>
-                <div class="footer-start-btn">
-                    <a href="#">開始使用<span class="material-icons">
-                            call_made
-                        </span></a>
+                <div class="footer-btn close">
+                    <button type="button"   class="footer-start-btn"> 開始使用<span   class="material-icons">
+                    call_made
+                    </span>
+                    </button>
                 </div>
+               
             </div>
             <div class="footer-menu">
                 <div class="footer-menu-top">
                     <ul>
-                        <li><a href="#">首頁</a></li>
-                        <li><a href="https://ritayang0811.github.io/newmission/price.html">定價</a></li>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="price.html">定價</a></li>
                     </ul>
-                    <div class="footer-logo"><img
-                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
-                            alt="logo"></div>
+                    <div class="footer-logo"><a href="https://ritayang0811.github.io/newmission/index.html"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"alt="logo"></a></div>
                 </div>
                 <div class="footer-bottom">
                     <div class="copyright">
@@ -381,8 +425,10 @@
                 </div>
             </div>
             </div>
+            </footer>
         </div>
     </div>
+
     
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

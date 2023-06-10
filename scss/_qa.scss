@@ -27,13 +27,14 @@
         }
     }    
 .QA-list{
-    display: block;
+    display: flex;
+    align-items: flex-start;
     padding: 20px 40px 20px 40px;
     color: #fff;
     text-decoration: none;
     border: 1px solid #525252;
     border-radius: 16px;
-    // transition: .5s ease-out; 
+    transition: .5s ease-out; 
     cursor: pointer;
     &:hover{
         border: 1px solid #fff;
@@ -43,22 +44,14 @@
         padding: 20px 20px 20px 20px;
     } 
 }
-
-.d-flex{
-    display: flex;
-    align-items: center;
-}
- 
-        
+      
 .QA-list-state{
     span{
         font-size: 24px;
         padding-right: 20px;
-        
-            vertical-align: bottom;
-          
+        vertical-align: bottom; 
         }
-    }
+}
 
 .QA-list-content{
     h4{

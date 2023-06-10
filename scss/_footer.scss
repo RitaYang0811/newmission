@@ -7,7 +7,10 @@
         gap: 32px;      
     }
 }   
-.footer-cta{  
+.footer-cta{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     h4{
       font-size: $H01;
       font-weight:900;
@@ -27,9 +30,11 @@
     
     }
 }
-
+.footer-cta.none{
+    display: none
+}
     
-.footer-start-btn {
+.footer-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,28 +42,32 @@
     @include mobile{
         padding-bottom: 120px;
     }
-    a{
-        display: block;
-        border: 1px solid white;
-        border-radius: 16px;
-        font-weight:700;
-        font-size: $H06;
-        text-decoration: none;
-        color:#fff;
-        padding:20px 32px 20px 40px;
-        &:hover{
-            background-color: #fff;
-            color: #000;
-            transition: .3s;
-        }
-        span{
-            font-size: 20px;
-            padding-left: 14px;
-            line-height: 0;
-        }  
-    }
-   
 }
+  .footer-cta.none{
+    display: none;
+    border: 0px;
+  }      
+.footer-start-btn {
+    border: 1px solid white;
+    background: #000;
+    border-radius: 16px;
+    font-weight:700;
+    font-size: $H06;
+    text-decoration: none;
+    color:#fff;
+    padding:20px 32px 20px 40px;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        transition: .3s;
+    }
+    span{
+        font-size: 20px;
+        padding-left: 14px;
+        line-height: 0;
+    }   
+}
+
 .footer-menu{
 @include mobile{
     margin:0 12px;
@@ -98,7 +107,15 @@
         }   
     } 
 }
-
+.footer-menu-top.none{
+    a{display: none;}
+    li{display: none;}
+    img{display: none;}
+    border-top: 0px;
+    padding-bottom: 250px;
+    
+    
+}
 .footer-bottom{
     font-weight: 700;
     line-height: 1.5;
@@ -108,7 +125,7 @@
     padding:20px 0 ;
     @include mobile{
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         gap:20px;    
     }
     .copyright{
@@ -141,7 +158,7 @@
     .backtotop{
         display:flex;
         align-items:center;
-        cursor: n-resize;
+        cursor: pointer;
         @include mobile{
             margin-right: 12px;
         }
@@ -152,6 +169,10 @@
             font-size: 16px;
         }
     }
+}
+
+.backtotop.none{
+    display: none;
 }
 
 

@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <title>AI工具王</title>
 </head>
 <body>
     <div class="container">
         <div class="wrap">
         <!-- 定價首頁 Header -->
-        <div class="header">
+        <header>
+            
             <div class="header-title">
-                <h1><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
-                        alt="logo"></h1>
-                <span class="material-icons">menu</span>
-                <ul class="menu">
-                    <li><a href="https://ritayang0811.github.io/newmission/index.html">首頁</a></li>
-                    <li><a href="#">定價</a></li>
-                </ul>
+                <h1><a href="https://ritayang0811.github.io/newmission/index.html">AI工具王</a></h1>
+                <div class="header-icon">
+                    <span class="material-icons icn-menu">menu</span>
+                    <span class="material-icons icn-close d-none">close</span>
+                </div>
+            <div class="menu">
+            <ul class="menu-sm">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="price.html">定價</a></li>
+            </ul>              
+            <ul class="menu-xl d-none" >
+                <li><a href="#">首頁</a></li>
+                <li><a href="https://ritayang0811.github.io/newmission/price.html">定價</a></li>
+                
+            </ul>
+            </div>
             </div>
             <div class="header-banner">
                     <h2>用多少，
@@ -36,14 +46,18 @@
                         <span><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png" alt="motion" class="img1"></span>
                     </div>
             </div>         
+            
+        </header>
         </div>
         <!-- 我們的定價 Price -->
+        <main>
+        <div class="wrap">
         <div class="price">
-            <h3>定價</h3>
+            <h2 class="h3">定價</h2>
             <ul class="price-list">
                 <li class="price-card">
                     <div class="price-card-title">
-                    <h4>琪琪</h4>
+                    <h4 class="price-name">琪琪</h4>
                     <p>初級</p>
                     <p>速度最快</p>
                     </div>
@@ -57,7 +71,7 @@
                 </li>
                 <li class="price-card">
                     <div class="price-card-title">
-                    <h4>昊昊</h4>
+                    <h4 class="price-name">昊昊</h4>
                     <p>中級</p>
                     </div>
                     <div class="price-cta">
@@ -70,7 +84,7 @@
                 </li>
                 <li class="price-card">
                     <div class="price-card-title">
-                    <h4>卡卡</h4>
+                    <h4 class="price-name">卡卡</h4>
                     <p>高級</p>
                     </div>
                     <div class="price-cta">
@@ -83,7 +97,7 @@
                 </li>
                 <li class="price-card">
                     <div class="price-card-title">
-                    <h4>杰杰</h4>
+                    <h4 class="price-name">杰杰</h4>
                     <p>最高級</p>
                     <p>資訊最完善</p>
                     </div>
@@ -97,39 +111,67 @@
                 </li>
             </ul>
         </div>
+        </div>
         <!-- 規範 Rule -->
+        <div class="wrap">
         <div class="rule">
-            <h3>使用規範</h3>
+            <h2 class="h3">使用規範</h2>
             <ul class="rule-list">
                 <li class="rule-card">
-                    <h4>守法</h4>
+                    <h3 class="rule-title">守法</h3>
                     <p>請遵守相關的法規和政策，不得進行任何違法違規的活動。</p>
                 </li>
                 <li class="rule-card">
-                    <h4>資訊安全</h4>
+                    <h3 class="rule-title">資訊安全</h3>
                     <p>請務必保護好自己的帳號和密碼，不得將其透露給他人。</p>
                 </li>
                 <li class="rule-card">
-                    <h4>守密</h4>
+                    <h3 class="rule-title">守密</h3>
                     <p>需對使用過程中產生的數據負責，不得擅自泄露數據。</p>
                 </li>
             </ul>
         </div>
-        <!-- first wrap end -->
         </div>
         <!-- AI工具王 tool -->
         <div class="tool">
             <div class="wrap">
-            <h5>這些超酷的應用，<br>都來自 AI工具王</h5>
+            <h2 class="h5">這些超酷的應用，<br>都來自 AI工具王</h2>
             <div class="search">
-                <input type="search" name="search" id="search" placeholder="輸入關鍵字搜尋">
-                <span class="material-icons s-icon">
+                <div class="search-bar">
+                    <span class="material-icons s-icon">
                     search
-                    </span>
+                </span>
+                <input type="search" name="search" id="search" placeholder="輸入關鍵字搜尋">
+                
+                </div>
                 <div class="list">
-                    <div class="list-l">
-                        <p>篩選</p>
-                        <span class="material-icons">filter_alt</span>
+                    <div class="select">
+                        <button type="button" class="select-btn ">
+                            <span class="select-title">篩選</span>
+                            <span class="material-icons">
+                                filter_alt
+                            </span>
+                        </button>
+                        <div class="select-menu">
+                        <ul class="select-model">
+                            <h5>AI模型</h5>
+                            <li ><a href="#">所有模型</a></li>
+                            <li><a href="#">卡卡</a></li>
+                            <li><a href="#">杰杰</a></li>
+                            <li><a href="#">琪琪</a></li>
+                            <li><a href="#">昊昊</a></li>
+                        </ul>
+                        <ul class="select-type mt-14">
+                            <h5 >類型</h5>
+                            <li><a href="#">所有類型</a></li>
+                            <li><a href="#">篩選項目1</a></li>
+                            <li><a href="#">篩選項目2</a></li>
+                            <li><a href="#">篩選項目3</a></li>
+                            <li><a href="#">篩選項目4</a></li>
+                            <li><a href="#">篩選項目5</a></li>
+                            <li><a href="#">篩選項目6</a></li>
+                        </ul>
+                        </div>
                     </div>
                     <ul class="list-m">
                         <li><a href="#">全部</a></li>
@@ -279,9 +321,7 @@
             <div class="QA">
                 <h3>常見問題</h3>
                 <ul>
-                    <li>
-                        <div class="QA-list">
-                        <div class="d-flex">
+                    <li class="QA-list"> 
                         <div class="QA-list-state">
                             <span class="material-icons add-icon">add</span>
                             <span class="material-icons remove-icon d-none">remove</span>
@@ -291,75 +331,67 @@
                             <p class="d-none">選擇適合的 AI 模型需要考慮您的應用場景、需要解決的問題、可用的資源以及預算等因素。可以通過對比不同模型的性能、準確率、速度等指標，以及與其他用戶的評價與反饋，來選擇最適合的模型。
                             </p>
                         </div>
-                        </div>
-                        </div>
                     </li>
-                    <li>
-                        <div class="QA-list">
-                            <div class="d-flex">
+                    <li class="QA-list">                      
+                        
+                        <div class="QA-list-state">
+                            <span class="material-icons add-icon">add</span>
+                            <span class="material-icons remove-icon d-none">remove</span>
+                        </div>
+                        <div class="QA-list-content">
+                            <h4>租用模型的費用是如何計算的？</h4>
+                            <p class="d-none">租用模型的費用通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的性能可以根據其精度、速度、暫用資源等指標來評估；而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動算出對應的租用費用。</p>
+                        </div>
+                          
+                    </li>
+                    <li class="QA-list">                       
+                        
+                        <div class="QA-list-state">
+                            <span class="material-icons add-icon">add</span>
+                            <span class="material-icons remove-icon d-none">remove</span>
+                        </div>
+                        <div class="QA-list-content">
+                            <h4>如何進行付款？</h4>
+                            <p class="d-none">付款方式可以通過網站上提供的宴上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用欸用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。</p>
+                        </div>
+                                              
+                    </li>
+                    <li class="QA-list">
+                        
                             <div class="QA-list-state">
                                 <span class="material-icons add-icon">add</span>
                                 <span class="material-icons remove-icon d-none">remove</span>
                             </div>
                             <div class="QA-list-content">
-                                <h4>租用模型的費用是如何計算的？</h4>
-                                <p class="d-none">租用模型的費用通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的性能可以根據其精度、速度、暫用資源等指標來評估；而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動算出對應的租用費用。</p>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="QA-list">
-                                <div class="d-flex">
-                                <div class="QA-list-state">
-                                    <span class="material-icons add-icon">add</span>
-                                    <span class="material-icons remove-icon d-none">remove</span>
-                                </div>
-                                <div class="QA-list-content">
-                                    <h4>如何進行付款？</h4>
-                                    <p class="d-none">付款方式可以通過網站上提供的宴上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用欸用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。</p>
-                                </div>
-                                </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="QA-list">
-                                    <div class="d-flex">
-                                    <div class="QA-list-state">
-                                        <span class="material-icons add-icon">add</span>
-                                        <span class="material-icons remove-icon d-none">remove</span>
-                                    </div>
-                                    <div class="QA-list-content">
                                         <h4>租用模型的期限是多久？</h4>
                                         <p class="d-none">租用模型的期限可以根據您的需求進行設置，通常可以選擇幾個小時、幾天或幾個月等不同的時間段。</p>
-                                    </div>
-                                    </div>
-                        </div>
+                            </div>
+                                            
                     </li>
-                    <li>
-                        <div class="QA-list">
-                                        <div class="d-flex">
-                                        <div class="QA-list-state">
+                    <li class="QA-list">
+                       
+                            <div class="QA-list-state">
                                             <span class="material-icons add-icon">add</span>
                                             <span class="material-icons remove-icon d-none">remove</span>
-                                        </div>
-                                        <div class="QA-list-content">
-                                            <h4>如果在使用的過程中遇到問題，應該怎麼處理？</h4>
-                                            <p class="d-none">如果在使用過程中遇到問題，您可以聯繫惡扶或技術支持人員進行諮詢或報告問題。您也可以。您也可以通過網站上的幫助中心或社區論壇尋找相關的解決方案和回答。</p>
-                                        </div>
-                                        </div>
-                        </div>
+                            </div>
+                            <div class="QA-list-content">
+                                <h4>如果在使用的過程中遇到問題，應該怎麼處理？</h4>
+                                <p class="d-none">如果在使用過程中遇到問題，您可以聯繫惡扶或技術支持人員進行諮詢或報告問題。您也可以。您也可以通過網站上的幫助中心或社區論壇尋找相關的解決方案和回答。</p>
+                            </div>
+                       
                     </li>
                 </ul>
             </div>
         </div>
+        </main>
         <!-- 表尾 footer -->
-        <div class="wrap">
+        <footer>
+            <div class="wrap">
             <div class="footer-menu">
             <div class="footer-menu-top">
                 <ul>
-                    <li><a href="https://ritayang0811.github.io/newmission/index.html">首頁</a></li>
-                    <li><a href="#">定價</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="price.html">定價</a></li>
                 </ul>
                 <div class="footer-logo"><img
                         src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
@@ -383,7 +415,8 @@
                 </div>
             </div>
             </div>
-        </div>
+            </div>
+        </footer>
 
     </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
