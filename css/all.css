@@ -726,7 +726,7 @@ img {
 .tool .list .select a {
   text-decoration: none;
   display: block;
-  color: inherit;
+  color: #000;
   margin-bottom: 8px;
 }
 .tool .list .select-menu {
@@ -793,7 +793,7 @@ img {
 .tool .list .dropdown a {
   text-decoration: none;
   display: block;
-  color: inherit;
+  color: #000;
 }
 .tool .list .dropdown .fs-normal {
   font-size: 16px;
